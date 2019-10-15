@@ -15,6 +15,12 @@ function sayHello(input) {
     }
 }
 
-function isFive() {
-    return true;
+function isFive(input) {
+    if (input === 5){
+        return true;
+    } else if (typeof input == "string"){
+        return true;
+    } else {
+        return false;
+    }
 }
