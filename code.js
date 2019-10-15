@@ -26,11 +26,23 @@ function isFive(input) {
 }
 
 function isEven(input) {
-    if (input % 2 === 0) {
+    console.log(input);
+    if (input % 2 === 0 && typeof input !== "boolean") {
+        console.log("in first if statement");
         return true;
-    } else if (typeof input === "boolean") {
-        return false;
     } else {
         return false;
     }
+}
+
+function isVowel(input) {
+  if (input === "a") {
+      return true;
+  } else if (input === "A"){
+      return true;
+  } else if (typeof input === 'boolean'){
+      return false;
+  } else {
+      return false;
+  }
 }
